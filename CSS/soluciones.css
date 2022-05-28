@@ -1,0 +1,68 @@
+/* -- Main -- */ 
+/* -- Section #Soluciones -- */ 
+
+#soluciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    background-image: linear-gradient(
+        0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)
+    ), url(/imagenes/mohammad-rahmani-1bNQVGzuy0U-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#soluciones h1{
+    color: white;
+    font-size: 3.5em;
+}
+
+#soluciones button{
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    background-color:  #124f88;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#soluciones a {
+    text-decoration: none;
+    color: white;
+}
+
+#soluciones button:hover{
+    background-color: rgb(124,178,246);
+}
+
+/* -- Section Versión Desktop -- */ 
+@media (min-width: 992px) {
+    #soluciones h1 {
+        font-size: 4.5em;
+    }
+
+    #soluciones button{
+        font-size: 1.5em;
+    }
+}
+
+.barra {
+    background-color: white;
+    width: 100%;
+    height: 25px;
+}
+
+#barra {
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    width: 100%;
+    height: 25px;
+
+}

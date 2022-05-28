@@ -1,0 +1,36 @@
+.envio-formulario {
+    width: 90%;
+    height: max-content;
+    margin: 30px auto 120px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, .3);
+}
+
+.envio-formulario img {
+    width: 300px;
+    height: 300px;
+}
+
+.envio-formulario h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.envio-formulario h1 {
+    text-transform: uppercase; 
+    font-weight: 300;
+    color: rgb(19,71,165);
+}
+
+.envio-formulario h2, h3 {
+    font-weight: 100;
+}
+
+.envio-formulario a {
+    font-size: 1.30em;
+    text-decoration: none;
+    color: rgb(19,71,165);
+}
+

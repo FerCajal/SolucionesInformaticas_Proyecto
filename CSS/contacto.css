@@ -1,0 +1,235 @@
+/* -- Contacto -- */
+/* -- Info Contacto --*/ 
+
+.titulo-contacto {
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+    color: #1c2833;
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px 30px;
+    padding: 0 40px;
+}
+
+.contacto h4 {
+    font-size: 1.25em;
+    text-align: left;
+    padding-bottom: 10px;
+    color: #1c2833;
+}
+
+.contacto p {
+    font-size: 1em;
+}
+
+.datos-contacto {
+    width: 100%;
+}
+
+.datos-contacto div {
+    display: flex;
+    align-items: center;
+}
+
+.datos-contacto-redes {
+    width: 100%;
+    margin-right: 40px;
+    align-items: center;
+}
+
+.datos-contacto-redes div {
+    display: flex;
+    align-items: center;
+}
+
+.datos-contacto i {
+    margin-right: 15px;
+    font-size: 1em;
+}
+
+.datos-contacto-redes i {
+    margin-right: 15px;
+    font-size: 1em;
+}
+
+/* -- Colores Iconos -- */ 
+.fa-whatsapp {
+    color: rgb(33, 211, 102);
+}
+
+.fa-envelope {
+    color: rgb(66 133 244)
+}
+
+.fa-location-dot {
+    color: rgb(229 9 20);
+}
+
+.fa-instagram {
+    color: rgb(225 48 108);
+}
+
+.fa-facebook {
+    color: rgb(66 103 178);
+}
+
+/* -- Contacto --*/ 
+/* -- Formulario y Maps -- */
+
+.contacto-forms-maps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.contacto-formulario {
+    width: 50%;
+    margin: auto;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.4);
+    
+}
+
+/* -- Maps -- */ 
+.contacto-maps {
+    width: 50%;
+    margin-left: 40px;
+}
+
+.contacto-maps:hover {
+    -webkit-transform:scale(1.1); 
+    transform: scale(1.1);
+    cursor: pointer;
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+}
+
+.contacto-maps iframe {
+    width: 90%;
+    height: 300px;
+    margin-left: 40px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* -- Formulario -- */ 
+/* -- Version Despktop -- */ 
+
+
+.formulario input {
+    width: 100%;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 50px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+    margin-bottom: 20px;
+}
+
+.formulario input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.3);
+}
+
+.formulario textarea:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario textarea {
+    width: 100%;
+    background: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.formulario button {
+    width: 100%;
+    height: 45px;
+    background: rgb(19,71,165);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: .3s ease all;
+}
+
+.formulario button:hover{
+    cursor: pointer;
+    background-color: #0075FF;
+    color: black;
+}
+
+.formulario .error {
+    border: 2px solid #bb2929;
+}
+
+/* -- Versión Mobile -- */ 
+
+@media (max-width: 992px) {
+
+    .contacto {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin: 1.5em;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .contacto-forms-maps {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .datos-contacto {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contacto-formulario {
+        width: 75%;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+    }    
+
+    .contacto-maps {
+        width: 75%;
+        margin-left: 0;
+    }
+    
+    .contacto-maps iframe {
+        width: 100%;
+        height: 400px;
+        margin-left: 0;
+    }
+}

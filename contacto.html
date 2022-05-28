@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/7d0d2c8ad7.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/soluciones.css">
+    <link rel="stylesheet" href="CSS/contacto.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="shortcut icon" href="/imagenes/favicon-16x16-.png" type="icon-logo">
+    <script defer src="index.js"></script>
+    <script src="validacion.js"></script>
+    <title>Soluciones Informaticas FC</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+                <a href="index.html" class="logo nav-link">
+                    <img src="/imagenes/logo2.png" alt="logo">
+                    <div class="logotype">
+                        Soluciones<br>Informaticas
+                    </div>
+                </a>
+                <div class="menu-btn">
+                    <div class="menu-btn_burguer"></div>
+                </div>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="index.html" class="nav-menu-link nav-link">Inicio</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="index.html#quien-soy" class="nav-menu-link nav-link">Quien Soy</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="index.html#servicios" class="nav-menu-link nav-link">Servicios</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="contacto.html" class="nav-menu-link nav-link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="soluciones">
+            <div class="container">
+                <div class="texto">
+                    <h1>Contactame</h1>
+                </div>
+            </div>
+        </section>
+        <h1 class="titulo-contacto">¡No dudes en contactarme para resolver tus dudas y darte la mejor solución a tus problemas informáticos!</h1>
+        <section class="contacto">
+            <div class="datos-contacto">
+                <h4>Información de Contacto</h4>
+                <div>
+                    <i class="fa-brands fa-whatsapp" width="20px" height="20px"></i>
+                    <p>+54 9 11 6275 1421</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>soluciones.informaticas.fc7@gmail.com</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Chivilcoy 414, Floresta, CABA</p>
+                </div>
+            </div>
+            <div class="datos-contacto-redes">
+                <h4>Seguime en mis redes sociales para ver mi forma de trabajar y conocerme un poco más</h4>
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                    <p>@solucionesinformaticas.fc</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <p>Soluciones Informaticas FC</p>
+                </div>    
+            </div>
+        </section>
+        <section class="contacto-form">    
+            <div class="contacto-forms-maps">
+                <div class="contacto-formulario">
+                    <h3>Enviá un mensaje</h3>
+                    <form action="/envioform.html" method="post" class="formulario">
+
+                        <label for="nombre" class="form-label">Nombre y Apellido</label>
+                        <input type="text" id="nombre" class="form-input" name="nombre" pattern="[a-zA-Z ]*" 
+                        title="Solo son válidos caracteres alfabéticos" placeholder="Escriba su nombre" required="">
+
+                        <label for="telefono" class="form-label">Telefono</label>
+                        <input type="text" id="telefono" class="form-input" name="telefono" 
+                        placeholder="Escriba su telefono. Ej: 11 12345678" pattern="[0-9] {10}">
+
+                        <label for="correo" class="form-label">Correo Electronico</label>
+                        <input type="email" id="correo" class="form-input" name="email" 
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+                        placeholder="Escriba una dirección de email" required="">
+
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea id="mensaje" class="form-input" name="comentarios" 
+                        placeholder="Escriba su mensaje" required=""></textarea>
+                        
+                        <button class="form-btn" type="submit" id="enviar">Enviar Mensaje</button>
+                    </form>
+                </div>   
+                <div class="contacto-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.0065064748323!2d-58.486076084201045!3d-34.62927586635894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9500ca302a1%3A0x2da1d391c5c32f3d!2sSoluciones%20Informaticas%20FC!5e0!3m2!1ses-419!2sar!4v1652548713292!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+  </main>
+    <footer>
+        <div class="footer-socialmedia">
+            <a href="https://www.instagram.com/solucionesinformaticas.fc/">
+                <i id="instagram" class='bx bxl-instagram'></i> 
+            </a>
+            <a href="https://www.facebook.com/solucionesinformaticas.fc">
+                <i id="facebook" class='bx bxl-facebook-circle'></i>
+            </a>
+            <a href="https://wa.me/+5491162751421">
+                <i id="whatsapp" class='bx bxl-whatsapp'></i>
+            </a>
+        </div>
+        <div class="contenedor">
+            <p class="p1">&copy; 2022 Soluciones Informaticas. Todos los derechos reservados</p>
+            <p class="p2">Hecho por <strong>Fernando Cajal Veren</strong></p>
+        </div>
+    </footer>
+</body>
+</html>

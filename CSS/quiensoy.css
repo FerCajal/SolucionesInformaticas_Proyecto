@@ -1,0 +1,117 @@
+/* -- Section QuienSoy -- */ 
+/* -- Section 2 -- */
+/* -- Version Mobile -- */
+
+.quiensoy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 15vh;
+    background-image: linear-gradient(
+        0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)
+    ), url(/imagenes/serviciosimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    font-size: 2em;
+}
+
+#quiensoy {
+    text-align: center;
+}
+
+.quiensoy-info{
+    
+    margin: 25px 20px;
+}
+
+.quiensoy-img {
+    width: 80%;
+    max-width: 500px;
+}
+
+.quiensoy-titulo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    color: rgb(19,71,165);
+}
+
+.quiensoy-detalles {
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 1.5;
+    max-width: 450px;
+    margin: 20px auto;
+    color: #1c2833;
+}
+
+.quiensoy-extra h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+}
+
+.quiensoy-extra {
+    margin: 20px 20px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.quiensoy-extra p {
+    color: #1c2833;
+}
+
+/* -- Section Versión Desktop -- */ 
+
+@media (min-width: 992px) {
+
+    #quiensoy {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .quiensoy-info {
+        width: 90%;
+        margin: 0px 0px;
+        max-width: 50%;
+    }
+    
+    .quiensoy-img {
+        width: 90%;
+        max-width: 500px;
+        margin-left: 30px;
+    }
+    
+    .quiensoy-titulo {
+        margin-top: 0;
+        padding: 0;
+        font-size: 2em;
+    }
+    
+    .quiensoy-detalles {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .quiensoy {
+        font-size: 2.5em;
+    }
+
+    .quiensoy-extra h2 {
+        margin-top: 30px;
+        font-size: 2em;
+        color: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    }
+    
+    .quiensoy-extra p {
+        margin: 20px 20px;
+        font-size: 1.5em;
+        text-align: center;
+    }
+}

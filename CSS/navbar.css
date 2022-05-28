@@ -1,0 +1,184 @@
+/* -- NavBar Versión Desktop --*/
+
+.header {
+    background-color: white;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, .4);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: rgb(19,71,165);
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(19,71,165);
+    padding: 0 40px;
+    
+}
+  
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size:  1.25em;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover {
+  background-color: rgba(19,71,165);
+  color: white;
+  transition: 0.5s;
+}
+
+/* -- Menú Hamburguesa -- */
+.menu-btn {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    margin-right: 2rem;
+    margin-top: 5px;
+}
+
+.menu-btn_burguer {
+    width: 2rem;
+    height: 0.3rem;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    border-radius: 0.5rem;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn_burguer::before,
+.menu-btn_burguer::after {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 0.3rem;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    border-radius: 0.5rem;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn_burguer::before {
+    transform: translateY(-0.7rem);
+}
+
+.menu-btn_burguer::after {
+    transform: translateY(0.7rem);
+}
+
+.menu-btn.open .menu-btn_burguer {
+    transform: translateX(-5rem);
+    background: transparent;
+}
+
+.menu-btn.open .menu-btn_burguer::before {
+    transform: rotate(45deg) translate(3.5rem, -3.5rem);
+}
+
+.menu-btn.open .menu-btn_burguer::after {
+    transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+}
+
+/* ----------------------------------------------------------------------------*/
+
+/* -- Version Mobile NavBar -- */ 
+
+@media (max-width: 815px) {
+    body {
+        padding-top: 100px 0;
+    }
+
+    .nav {
+        margin: 10px;
+    }
+        
+    .logo {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: #124f88;
+        padding: 0 40px;
+        
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+        background-blend-mode: screen;
+        position: fixed;
+        top: 75px;     
+        width: 100%;
+        padding: 2rem 0;
+        height: calc(100% - 75px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.5s;
+        opacity: 1;
+    }
+    
+    .nav-menu-item {
+        font-size: 1.5em;
+        line-height: 70px;
+    }
+    
+    .nav-menu-link {
+        padding: 8px 12px;
+        border-radius: 3px;
+    }
+    
+    .nav-menu-link:hover {
+      background-color: #034574;
+      color: white;
+      transition: 0.5s;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+    .nav-menu_visible {
+        left: 0%;
+    }
+}
